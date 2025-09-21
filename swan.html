@@ -36,59 +36,6 @@
         }
 
         /* Center progress dots properly */
-.progress-dots {
-    position: fixed;
-    top: 20px; /* keep a little closer to top for small screens */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap; /* prevents overflow */
-    z-index: 100;
-}
-
-/* Center nav buttons properly */
-.nav-container {
-    position: fixed;
-    bottom: 30px; /* move to bottom for easier thumb reach */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap; /* stack if not enough width */
-    z-index: 100;
-    width: 100%; /* so it spans full width */
-    max-width: 400px; /* keeps them tight */
-}
-
-/* Make nav buttons responsive */
-.nav-btn {
-    flex: 1; /* equal width */
-    min-width: 120px;
-    text-align: center;
-    padding: 12px 18px;
-    font-size: 1em;
-}
-
-/* Adjust for very small screens */
-@media (max-width: 480px) {
-    .nav-container {
-        bottom: 20px;
-        gap: 10px;
-        max-width: 90%; /* buttons don’t stretch outside */
-    }
-    .nav-btn {
-        font-size: 0.9em;
-        min-width: 100px;
-        padding: 10px 15px;
-    }
-    .progress-dots {
-        top: 15px;
-        gap: 6px;
-    }
-}
 
 
         @keyframes gradientShift {
